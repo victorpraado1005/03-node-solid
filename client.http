@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:3333
+// @authToken = {{auth.response.body.access_token}}
+
+# @name create_user
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "name": "Victor Prado",
+  "email": "prado.victor@gmail.com",
+  "password": "125534"
+}
+
+###
+# @name auth
+POST {{baseUrl}}/sessions
+Content-Type: application/json
+
+{
+  "email": "prado.victor@gmail.com",
+  "password": "1234"
+}
