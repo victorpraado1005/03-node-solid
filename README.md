@@ -1,0 +1,1 @@
+ - [X] Deve ser possível se cadastrar
